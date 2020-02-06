@@ -25,7 +25,7 @@ void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData
 	params.NavData = NavData;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -52,7 +52,7 @@ void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor*
 	params.Hit = Hit;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -72,7 +72,7 @@ struct FVector UPathFollowingComponent::GetPathDestination()
 	UPathFollowingComponent_GetPathDestination_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -94,7 +94,7 @@ TEnumAsByte<EPathFollowingAction> UPathFollowingComponent::GetPathActionType()
 	UPathFollowingComponent_GetPathActionType_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -117,7 +117,7 @@ void UCrowdFollowingComponent::SuspendCrowdSteering(bool bSuspend)
 	params.bSuspend = bSuspend;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -140,7 +140,7 @@ bool AAIController::UseBlackboard(class UBlackboardData* BlackboardAsset, class 
 	params.BlackboardAsset = BlackboardAsset;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -166,7 +166,7 @@ void AAIController::UnclaimTaskResource(class UClass* ResourceClass)
 	params.ResourceClass = ResourceClass;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -187,7 +187,7 @@ void AAIController::SetMoveBlockDetection(bool bEnable)
 	params.bEnable = bEnable;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -209,7 +209,7 @@ bool AAIController::RunBehaviorTree(class UBehaviorTree* BTAsset)
 	params.BTAsset = BTAsset;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -296,7 +296,7 @@ void AAIController::OnGameplayTaskResourcesClaimed(const struct FGameplayResourc
 	params.FreshlyReleased = FreshlyReleased;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -332,7 +332,7 @@ TEnumAsByte<EPathFollowingRequestResult> AAIController::MoveToLocation(const str
 	params.bAllowPartialPath = bAllowPartialPath;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -368,7 +368,7 @@ TEnumAsByte<EPathFollowingRequestResult> AAIController::MoveToActor(class AActor
 	params.bAllowPartialPath = bAllowPartialPath;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -391,7 +391,7 @@ void AAIController::K2_SetFocus(class AActor* NewFocus)
 	params.NewFocus = NewFocus;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -412,7 +412,7 @@ void AAIController::K2_SetFocalPoint(const struct FVector& FP)
 	params.FP = FP;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -430,7 +430,7 @@ void AAIController::K2_ClearFocus()
 	AAIController_K2_ClearFocus_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -450,7 +450,7 @@ bool AAIController::HasPartialPath()
 	AAIController_HasPartialPath_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -472,7 +472,7 @@ class UPathFollowingComponent* AAIController::GetPathFollowingComponent()
 	AAIController_GetPathFollowingComponent_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -494,7 +494,7 @@ TEnumAsByte<EPathFollowingStatus> AAIController::GetMoveStatus()
 	AAIController_GetMoveStatus_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -516,7 +516,7 @@ struct FVector AAIController::GetImmediateMoveDestination()
 	AAIController_GetImmediateMoveDestination_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -538,7 +538,7 @@ class AActor* AAIController::GetFocusActor()
 	AAIController_GetFocusActor_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -562,7 +562,7 @@ struct FVector AAIController::GetFocalPointOnActor(class AActor* Actor)
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -584,7 +584,7 @@ struct FVector AAIController::GetFocalPoint()
 	AAIController_GetFocalPoint_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -606,7 +606,7 @@ class UAIPerceptionComponent* AAIController::GetAIPerceptionComponent()
 	AAIController_GetAIPerceptionComponent_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -629,7 +629,7 @@ void AAIController::ClaimTaskResource(class UClass* ResourceClass)
 	params.ResourceClass = ResourceClass;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
+	fn->FunctionFlags |= 1x301;
 
 	UObject::ProcessEvent(fn, &params);
 
